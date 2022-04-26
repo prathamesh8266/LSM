@@ -1,0 +1,67 @@
+.logo {
+  height: 550px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.h1 {
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+}
+.p {
+  font-size: 20px;
+  color: rgb(14, 107, 76);
+}
+.h1_2 {
+  color: rgb(134, 189, 202);
+}
+.heroBtn {
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  background-color: rgb(134, 189, 202);
+  border: none;
+  outline: none;
+}
+.heroBtn:hover {
+  transform: scale(1.1);
+  outline: 2px solid rgb(204, 204, 204);
+}
+
+@media all and (max-width: 1425px) {
+  .logo {
+    height: 450px;
+  }
+}
+@media all and (max-width: 1030px) {
+  .logo {
+    height: 400px;
+  }
+}
+
+@media all and (max-width: 945px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .main {
+    padding: 20px;
+    overflow: hidden;
+  }
+  .h1 {
+    font-size: 40px;
+  }
+  .logo {
+    overflow: hidden;
+    height: 300px;
+  }
+}
